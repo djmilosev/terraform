@@ -1,5 +1,4 @@
 [web]
-# usage: INSTANCE_IP_ADDRESS ansible_ssh_user=djmilosevic02
-34.65.219.110   ansible_ssh_user=djmilosevic02
-34.65.207.193   ansible_ssh_user=djmilosevic02
-34.65.128.214   ansible_ssh_user=djmilosevic02
+#
+# Usage: x.x.x.x ansible_ssh_user=djmilosevic02
+#
