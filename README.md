@@ -14,7 +14,6 @@ Contains a playbook for:
 - Installing Apache Web Server on Ubuntu 16 GCE instances,
 - Seting up template of simple HTML page.
 
-
 ## Terrafrom
 
 Contains terraform files to setup the following:
@@ -29,8 +28,15 @@ Contains terraform files to setup the following:
 
   Configure infrastructure with Terraform:
 
-    cd terraform; terraform apply .
+    cd terraform; terraform init
+    terraform apply .
 
   Provision Apache HTTP Web Server with simple HTML website:
 
     cd ansible; ansible-playbook -i inventory/ansible-hosts deploy.yml
+
+## Cleanup
+
+  To cleanup run the following command:
+
+    terraform destroy .
