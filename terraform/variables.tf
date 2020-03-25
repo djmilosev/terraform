@@ -1,0 +1,10 @@
+variable "credentials" {default = "~/gcp_credentials"}
+variable "ssh_key" { default = "~/gcp_credentials/vm-key.pub" }
+variable "ssh_user" { default = "djmilosevic02"}
+variable "project" { default = "gridu-gcp-dmilosevic" }
+variable "node_count" { default = "3" }
+variable "image" { default = "ubuntu-os-cloud/ubuntu-1604-lts" }
+variable "machine_type" { default = "n1-standard-1" }
+variable "region" { default = "europe-west6" }
+variable "zone" { default = "europe-west6-a" }
+variable "network" { default = "default"}
