@@ -1,19 +1,15 @@
 ---
-- name: Update Apt Cache
+- name: Update repositories cache and install Apache
   apt:
-    update_cache: yes
-
-- name: Install Apache Web Server
-  apt: 
     name: apache2
-    state: present
+    update_cache: yes
 
 - name: Copy Template
   template:
     src: index.html.j2
     dest: /var/www/html/index.html
 
-- name: Restart Apache Web Server
+- name: Restart Apache
   service: 
     name: apache2
     state: restarted
